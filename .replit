@@ -1,2 +1,4 @@
-language = "pygame"
-run = "python main.py"
+language = "cpp, pygame"
+#run = "g++ main.cpp -o main.exe; python main.py"
+run = "g++ -c -fPIC foo.cpp -o foo.o; g++ -shared -Wl,-soname,libfoo.so -o libfoo.so  foo.o; python main.py"
+# run = "g++ main.cpp -o main.exe; ./main.exe"
