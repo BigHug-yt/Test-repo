@@ -1,6 +1,6 @@
 import pygame
-import fooWrapper
+import cppentryWrapper as cppentry
 pygame.init()
 
-f = fooWrapper.Foo()
+f = cppentry.Foo()
 f.bar()
